@@ -1,0 +1,84 @@
+
+form {
+  width: 380px;
+}
+
+.form_title_legend {
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 15px;
+  font-size: 1.5em;
+}
+
+.input_label {
+
+}
+
+.main_form {
+  grid-area: content;
+  display: flex;
+  justify-content: center;
+  padding-top: 35px;
+}
+
+.user_info_entry_form {
+  display: flex;
+}
+
+.user_info_entry_form_unhide {
+}
+
+#email_field, #full_name, #password_field, #number_field {
+  padding: 5px;
+  width: 300px;
+  font-size: .8em;
+  display: block;
+  border: 1px solid #000;
+}
+
+#email_field_login, #password_field_login, #email_field_login_compact, #password_field_login_compact {
+  padding: 3px;
+  width: 225px;
+  font-size: .8em;
+  display: inline-block;
+  border: 1px solid #000;
+  background-color: #fff;
+  color: #000;
+}
+
+#form_buttons {
+  padding: 10px 0px 25px 4px;
+}
+
+#form_buttons input {
+  height: 50px;
+  width: 145px;
+  border: 1px solid #000;
+  background-color: #fff;
+  font-size: .8em;
+  margin: 0px 10px 0px 10px;
+}
+
+#form_buttons input:active {
+  background-color: #000;
+  color: #fff;
+}
+
+#form_span {
+  margin: 0 auto;
+  width: 310px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px 5px 0px;
+}
+
+#form_span p {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 5px 0px;
+}
+
+#main_form {
+  padding-bottom: 45px;
+}

@@ -1,0 +1,18 @@
+footer {
+  background-color: #fff;
+  color: #000;
+  border-top: 1px solid #4B4B4B;
+  grid-area: footer;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+}
+
+h3 {
+  font-weight: 300;
+  font-size: 0.8em;
+}

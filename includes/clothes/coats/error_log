@@ -1,0 +1,4 @@
+[19-Nov-2018 12:42:35 UTC] PHP Notice:  Undefined variable: image_path in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/includes/clothes/coats/coat_01.php on line 63
+[19-Nov-2018 12:42:35 UTC] PHP Notice:  Undefined variable: description in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/includes/clothes/coats/coat_01.php on line 65
+[19-Nov-2018 12:42:35 UTC] PHP Notice:  Undefined variable: price in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/includes/clothes/coats/coat_01.php on line 86
+[19-Nov-2018 12:42:35 UTC] PHP Notice:  Undefined variable: sale in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/includes/clothes/coats/coat_01.php on line 90

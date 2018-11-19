@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a, a:visited, a:active {
+  text-decoration: none;
+  color: #fff;
+}
+
+header {
+  border-bottom: 1px solid #4B4B4B;
+  grid-area: header;
+  width: 100vw;
+}
+
+span {
+  padding-top: 10px;
+}
+
+ul li {
+  display: block;
+}
+
+.login_button {
+  width: 100px;
+  height: 35px;
+  background-color: #fff;
+  color: #000;
+  font-size: .8em;
+  border: 1px solid #4B4B4B;
+}
+
+.login_button:active {
+  background-color: #000;
+  color: #fff;
+}
+
+.login_fields label {
+  padding-right: 5px;
+}
+
+.login_links_compact {
+  display: flex;
+}
+
+.login_links_account_info {
+  padding-top: 0px;
+  padding-right: 5px;
+}
+
+.login_links_account_info p {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: .8em;
+}
+
+.main_menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.main_menu ul li:hover, .main_menu ul li:active {
+  color: #000;
+  background-color: #fff;
+}
+
+.main_menu, .submenu {
+  cursor: default;
+}
+
+.p_link {
+  cursor: pointer;
+}
+
+.submenu {
+  background-color: #fff;
+  position: absolute;
+  top: 50px;
+  right: 15px;
+  display: none;
+  flex-direction: column;
+  padding: 0px 10px 10px 10px;
+  border: 1px solid #4B4B4B;
+  margin-right: -15px;
+  margin-top: 5px;
+}
+
+.submenu li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0;
+  color: #000;
+  background-color: #fff;
+}
+
+.unhide_submenu {
+  display: flex;
+}
+
+#email_field_login, #password_field_login, #email_field_login_compact, #password_field_login_compact {
+  padding: 3px;
+  width: 225px;
+  font-size: .8em;
+  display: inline-block;
+  border: 1px solid #4B4B4B;
+  background-color: #fff;
+  color: #000;
+}
+
+#login_button_2 {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+#logo h2 {
+  background-color: #FF0000;
+  color: #fff;
+}
+
+#submenu_parent {
+  display: block;
+}
+
+#submenu_parent:hover {
+  background-color: #fff;
+}
+
+@media screen and (max-width: 650px) {
+  #login_fullsize {
+    display: none;
+  }
+
+  #logo {
+    display: inline-flex;
+  }
+
+  #logo h1 {
+    margin-left: 5px;
+    margin-top: 14px;
+    font-size: 1.5em;
+  }
+
+  #logo h2 {
+    font-size: 2.2em;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-left: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+
+  .login_links {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  #login_fullsize {
+    display: none;
+  }
+
+  #logo {
+    display: inline-flex;
+  }
+
+  #logo h1 {
+    margin-left: 5px;
+    margin-top: 14px;
+    font-size: 1.5em;
+  }
+
+  #logo h2 {
+    font-size: 2.2em;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-left: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+
+  .login_links {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .login_fields {
+    padding-top: 10px;
+  }
+
+  .login_input_label {
+    padding-right: 5px;
+  }
+
+  .login_links {
+    display: flex;
+    padding-right: 15px;
+    margin-top: 8px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .login_links_account_info {
+    padding-top: 0px;
+    margin-top: -5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .login_links_account_info p {
+    font-size: .8em;
+    padding-right: 5px;
+  }
+
+  .submit_button:active {
+    background-color: #000;
+    color: #fff;
+  }
+
+  #login_compact {
+    display: none;
+  }
+
+  #login_fullsize {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding-right: 15px;
+    padding-top: 5px;
+    align-content: flex-start;
+  }
+
+  #logo {
+    display: inline-flex;
+  }
+
+  #logo h1 {
+    margin-left: 10px;
+    margin-top: 25px;
+    font-size: 3em;
+  }
+
+  #logo h2 {
+    font-size: 5em;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-left: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  #user_info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
