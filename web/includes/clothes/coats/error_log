@@ -1,0 +1,18 @@
+[25-Nov-2018 14:12:47 UTC] PHP Notice:  Undefined variable: related_image_number in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/includes/clothes/coats/coat_01.php on line 43
+[25-Nov-2018 14:12:47 UTC] PHP Notice:  Undefined variable: related_description in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/includes/clothes/coats/coat_01.php on line 58
+[25-Nov-2018 14:12:47 UTC] PHP Notice:  Undefined variable: price in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/includes/clothes/coats/coat_01.php on line 101
+[25-Nov-2018 14:12:47 UTC] PHP Notice:  Undefined variable: sale in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/includes/clothes/coats/coat_01.php on line 105
+[25-Nov-2018 14:13:50 UTC] PHP Parse error:  syntax error, unexpected '=', expecting ',' or ';' in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/includes/clothes/coats/coat_01.php on line 29
+[25-Nov-2018 14:13:51 UTC] PHP Parse error:  syntax error, unexpected '=', expecting ',' or ';' in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/includes/clothes/coats/coat_01.php on line 29
+[25-Nov-2018 14:14:02 UTC] PHP Notice:  Undefined variable: related_image_number in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/includes/clothes/coats/coat_01.php on line 43
+[25-Nov-2018 14:14:02 UTC] PHP Notice:  Undefined variable: related_description in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/includes/clothes/coats/coat_01.php on line 58
+[25-Nov-2018 14:14:02 UTC] PHP Notice:  Undefined variable: price in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/includes/clothes/coats/coat_01.php on line 101
+[25-Nov-2018 14:14:02 UTC] PHP Notice:  Undefined variable: sale in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/includes/clothes/coats/coat_01.php on line 105
+[25-Nov-2018 14:14:30 UTC] PHP Notice:  Undefined variable: row in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/includes/clothes/coats/coat_01.php on line 26
+[25-Nov-2018 14:14:30 UTC] PHP Notice:  Undefined variable: row in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/includes/clothes/coats/coat_01.php on line 27
+[25-Nov-2018 14:14:30 UTC] PHP Notice:  Undefined variable: row in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/includes/clothes/coats/coat_01.php on line 28
+[25-Nov-2018 14:14:30 UTC] PHP Notice:  Undefined variable: row in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/includes/clothes/coats/coat_01.php on line 29
+[25-Nov-2018 14:15:40 UTC] PHP Parse error:  syntax error, unexpected '=', expecting ',' or ';' in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/includes/clothes/coats/coat_01.php on line 27
+[25-Nov-2018 14:15:41 UTC] PHP Parse error:  syntax error, unexpected '=', expecting ',' or ';' in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/includes/clothes/coats/coat_01.php on line 27
+[25-Nov-2018 14:16:58 UTC] PHP Parse error:  syntax error, unexpected 'global' (T_GLOBAL) in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/includes/clothes/coats/coat_01.php on line 74
+[25-Nov-2018 14:16:59 UTC] PHP Parse error:  syntax error, unexpected 'global' (T_GLOBAL) in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/includes/clothes/coats/coat_01.php on line 74
