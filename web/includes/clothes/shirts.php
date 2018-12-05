@@ -1,9 +1,8 @@
-<link rel='stylesheet' href='./css/style_splash.css' type='text/css' />
 <section id='coats_page' class='coats_page'>
   <h2>Shirts</h2>
   <section id='main_splash_container'>
     <?php
-    include_once('./functions.php');
+    include_once('../functions.php');
 
     if(isset($_POST['submitted']) || isset($_POST['color_submitted'])) {
       if(isset($_POST['color_submitted'])) {
@@ -22,7 +21,7 @@
   <h2>T-Shirts</h2>
   <section id='main_splash_container'>
     <?php
-    include_once('./functions.php');
+    include_once('../functions.php');
 
     if(isset($_POST['submitted']) || isset($_POST['color_submitted'])) {
       if(isset($_POST['color_submitted'])) {

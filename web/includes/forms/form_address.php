@@ -1,7 +1,3 @@
-<link rel='stylesheet' href='./css/style_form.css' type='text/css' />
-
-<?php include('./functions.php'); ?>
-
 <section id='user_info_entry_form' class='user_info_entry_form'>
   <div id='background_fill'>
     <div id='form_wrapper'>
@@ -26,7 +22,7 @@
               <input type='reset' name='reset_button' id='reset_button' value='Click to reset!' />
             </p>
           </fieldset>
-          <input type='hidden' name='submitted' id='submitted' value='submitted' />
+          <input type='hidden' name='address_submitted' id='address_submitted' value='address_submitted' />
         </form>
       </section>
     </div>

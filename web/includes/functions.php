@@ -1,4 +1,13 @@
 <?php
+function add_slashes($data){
+  if(get_magic_quotes_gpc()) $data = stripslashes($data);
+  return addslashes($data);
+}
+
+function strip_slashes($data){
+  return stripslashes($data);
+}
+
 function create_login_field($label='', $type='text', $name='', $id='', $extras=array()){
 	if(!empty($_POST[$name])){
 		$value = $_POST[$name]; //$first_name, $last_name
@@ -29,9 +38,7 @@ function create_login_field($label='', $type='text', $name='', $id='', $extras=a
 	}
 	echo "</p>";
 }
-?>
 
-<?php
 function create_form_field($label='', $type='text', $name='', $id='', $extras=array()){
 	if(!empty($_POST[$name])){
 		$value = $_POST[$name]; //$first_name, $last_name
@@ -62,9 +69,7 @@ function create_form_field($label='', $type='text', $name='', $id='', $extras=ar
 	}
 	echo "</p>";
 }
-?>
 
-<?php
 function create_product_preview($clothing_id=0) {
 	error_reporting(E_ALL);
 	ini_set('display_errors',1);
@@ -103,11 +108,8 @@ function create_product_preview($clothing_id=0) {
 	echo "</form>";
 
   $conn->close();
-
 }
-?>
 
-<?php
 function create_product_page($clothing_id=0) {
   error_reporting(E_ALL);
   ini_set('display_errors',1);
@@ -126,7 +128,6 @@ function create_product_page($clothing_id=0) {
   $qry = "SELECT clothing_photo, clothing_description_id, clothing_price, clothing_sale_price, cs_item_id  FROM cs_clothing_items WHERE cs_clothing_id = $clothing_id";
 
   $result = $conn->query($qry);
-  // $row = mysqli_fetch_row($result);
   while($row = $result->fetch_assoc()) {
 	  $related_image_number = $row['clothing_photo'];
 	  $related_description = $row['clothing_description_id'];
@@ -159,7 +160,9 @@ function create_product_page($clothing_id=0) {
 
 	echo "<section id='flex_container'>
 	  <section id='main_product_container'>
-	    <img src='$image_path'>
+			<section id='img_container'>
+		    <img src='$image_path'>
+			</section>
 	    <p id='description'>
 	      $description
 	    </p>
@@ -178,27 +181,33 @@ function create_product_page($clothing_id=0) {
 	        <option value='6'>XX-Large</option>
 	      </select>
 	    </section>
-	    <section id='price_info'>
-	      <p>Price:</p>
-	      <p>$$price</p>
-	    </section>
-	    <section id='sale_info'>
-	      <p>Sale</p>
-	      <p>$$sale</p>
-	    </section>
-	    <section id='qty_info'>
-	      <input type='number' name='quantity' min='1' max='10'>
-	    </section>
-	    <section id='cart_info'>
-	      <input type='button' value='Add To Cart'>
-	    </section>
+			<section id='price_info'>
+		    <article id='price_cost'>
+		      <p>Price:</p>
+		      <p>$$price</p>
+		    </article>";
+				if($price != $sale) {
+					echo "
+			    <article id='sale_cost'>
+			      <p>Sale</p>
+			      <p>$$sale</p>
+			    </article>";
+				}
+			echo "</section>
+			<form id='cart' action='' method='POST'>
+		    <article id='qty_info'>
+					<label>Qty:</label>
+		      <input type='number' id='item_quantity' name='item_quantity' min='1' max='10' value='1'>
+		    </article>
+		    <article id='cart_info'>
+			    <button id='button_add_to_cart' name='button_add_to_cart'>Add To Cart</button>
+					<input type='hidden' value='add_item_to_cart' id='add_item_to_cart' name='add_item_to_cart'>
+		    </article>
+			</form>
 	  </section>
 	</section>";
 }
 
-?>
-
-<?php
 function create_color_swatches($clothing_item_id=0) {
 	error_reporting(E_ALL);
   ini_set('display_errors',1);
@@ -235,51 +244,222 @@ function create_color_swatches($clothing_item_id=0) {
 
 	mysqli_free_result($clothing_item_id_result);
 }
-?>
 
-<?php
 function create_login_header_field() {
 
-  echo "<section id='user_info'>
-    <section id='login_fullsize'>
-      <span class='login_fields'>";
-          create_login_field('Email:', 'email', 'email_field_login', 'email_field_login', ['maxlength'=>'40', 'size'=>'20', 'title'=>'Please enter your email here', 'placeholder'=>'email@domain.com']);
-      echo "</span>
-      <span class='login_fields'>";
-          create_login_field('Password:', 'password', 'password_field_login', 'password_field_login', ['maxlength'=>'40', 'size'=>'20', 'title'=>'Please enter your password here', 'placeholder'=>'Please enter your password here', 'pattern'=>'[A-Za-z]{2,20}']);
-      echo "</span>
-    </section>
-    <section class='login_links'>
-      <span class='login_links_account_info'>
-        <p class='p_link create_account_url' href='' target='_self'>Create Account</p>
-        <p class='p_link'>Forgot password?</p>
-      </span>
-      <input type='button' class='login_button submit_button' value='Submit'>
-    </section>
+  echo "<section id='user_info'>";
+	if(!isset($_COOKIE['user'])) {
+		echo "<form action='' method='POST'>
+	    <section id='login_fullsize'>
+	      <span class='login_fields'>";
+	          create_login_field('Email:', 'email', 'email_field_login', 'email_field_login', ['maxlength'=>'40', 'size'=>'20', 'title'=>'Please enter your email here', 'placeholder'=>'email@domain.com']);
+	      echo "</span>
+	      <span class='login_fields'>";
+	          create_login_field('Password:', 'text', 'password_field_login', 'password_field_login', ['maxlength'=>'40', 'size'=>'20', 'title'=>'Please enter your password here', 'placeholder'=>'Please enter your password here', 'pattern'=>'[A-Za-z]{2,20}']);
+	      echo "</span>
+	    </section>
+	    <section class='login_links'>
+	      <span class='login_links_account_info'>
+	        <p class='p_link create_account_url' href='' target='_self'>Create Account</p>
+	        <p class='p_link'>Forgot password?</p>
+	      </span>
+				<button class='login_button submit_button'>Submit</button>
+				<input type='hidden' id='submit_login_info' name='submit_login_info' value='submit_login_info'>
+	    </section>
+		</form>
     <section id='login_compact'>
       <section class='login_fields'>
         <ul class='main_menu'>
           <li id='submenu_parent'><input type='button' id='login_button_2' class='login_button submit_button' value='Login'>
             <ul id='submenu' class='submenu'>
               <li>
-                <span class='login_fields'>";
-                    create_login_field('Email:', 'email', 'email_field_login_compact', 'email_field_login_compact', ['maxlength'=>'40', 'size'=>'20', 'title'=>'Please enter your email here', 'placeholder'=>'email@domain.com']);
-                echo "</span>
-                <span class='login_fields'>";
-                    create_login_field('Password:', 'password', 'password_field_login_compact', 'password_field_login_compact', ['maxlength'=>'40', 'size'=>'20', 'title'=>'Please enter your password here', 'placeholder'=>'Please enter your password here', 'pattern'=>'[A-Za-z]{2,20}']);
-                echo "</span>
-                <span class='login_links_compact'>
-                  <span class='login_links_account_info'>
-                    <p class='p_link create_account_url'>Create Account</p>
-                    <p class='p_link'>Forgot password?</p>
-                  </span>
-                  <input type='button' class='submit_button login_button' value='Submit'>
-                </span>
+								<form action='' method='POST'>
+	                <span class='login_fields'>";
+	                    create_login_field('Email:', 'email', 'email_field_login_compact', 'email_field_login_compact', ['maxlength'=>'40', 'size'=>'20', 'title'=>'Please enter your email here', 'placeholder'=>'email@domain.com']);
+	                echo "</span>
+	                <span class='login_fields'>";
+	                    create_login_field('Password:', 'text', 'password_field_login_compact', 'password_field_login_compact', ['maxlength'=>'40', 'size'=>'20', 'title'=>'Please enter your password here', 'placeholder'=>'Please enter your password here', 'pattern'=>'[A-Za-z]{2,20}']);
+	                echo "</span>
+	                <span class='login_links_compact'>
+	                  <span class='login_links_account_info'>
+	                    <p class='p_link create_account_url'>Create Account</p>
+	                    <p class='p_link'>Forgot password?</p>
+	                  </span>
+										<button class='login_button submit_button'>Submit</button>
+										<input type='hidden' id='submit_login_info_compact' name='submit_login_info_compact' value='submit_login_info_compact'>
+	                </span>
+								</form>
               </li>
             </ul>
           </li>
         </ul>
-    </section>
-  </section>";
+    </section>";
+	} else {
+		$cookie_id = 'user';
+		echo "<article id='logged_in_info_and_cart'>";
+		echo "<span id='logged_in_info'>";
+		echo "<p>Logged in as:</p>";
+		echo "<p>$_COOKIE[$cookie_id]</p>";
+		echo "</span>";
+		echo "<span id='logout_and_cart_button_container'>";
+		echo "<form action='' method='POST'>";
+		echo "<button type='submit' id='user_logout_button' name='user_logout_button'>Logout</button>";
+		echo "<input type='hidden' value='user_logout' name='user_logout' id='user_logout'>";
+		echo "</form>";
+		echo "<form action='' method='POST'>";
+		echo "<button type=submit' id='view_cart_button' name='view_cart_button'>View Cart</button>";
+		echo "<input type='hidden' value='view_cart' name='view_cart' id='view_cart'>";
+		echo "</form>";
+		echo "</span>";
+		echo "</article>";
+	}
+  echo "</section>";
+}
+
+function check_if_user_exists($user_id) {
+	error_reporting(E_ALL);
+  ini_set('display_errors',1);
+
+  $servername = 'localhost';
+  $username = 'kbsmith01_user1';
+  $password = 'Mynewpassword2';
+  $dbname = 'kbsmith01_cs';
+
+  // Create connection
+  $conn = new mysqli($servername, $username, $password, $dbname);
+  // Check connection
+  if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+  }
+
+	$qry = "SELECT * FROM cs_customers WHERE email = '$user_id'";
+
+	$result = $conn->query($qry);
+
+	if ($result->num_rows !== 0) {
+		return true;
+	} else {
+		return false;
+	}
+}
+
+function add_customer_to_database($_name, $_email, $_password, $_phone) {
+	error_reporting(E_ALL);
+	ini_set('display_errors',1);
+
+	$servername = 'localhost';
+	$username = 'kbsmith01_user1';
+	$password = 'Mynewpassword2';
+	$dbname = 'kbsmith01_cs';
+
+	// Create connection
+	$conn = new mysqli($servername, $username, $password, $dbname);
+	// Check connection
+	if ($conn->connect_error) {
+		die("Connection failed: " . $conn->connect_error);
+	}
+
+	$qry = "INSERT INTO cs_customers(full_name, email, phone, password) VALUES ('$_name', '$_email', '$_phone', '$_password')";
+
+	if($conn->query($qry) === TRUE) {
+		echo "<p>Successfully created customer ID</p>";
+	} else {
+		echo "<p>Error creating customer ID</p>";
+	}
+
+	$conn->close();
+}
+
+function validate_user_login($email, $user_password) {
+	error_reporting(E_ALL);
+	ini_set('display_errors',1);
+
+	$servername = 'localhost';
+	$username = 'kbsmith01_user1';
+	$password = 'Mynewpassword2';
+	$dbname = 'kbsmith01_cs';
+
+	// Create connection
+	$conn = new mysqli($servername, $username, $password, $dbname);
+	// Check connection
+	if ($conn->connect_error) {
+		die("Connection failed: " . $conn->connect_error);
+	}
+
+	$qry = "SELECT * FROM cs_customers WHERE email='$email' AND password='$user_password'";
+
+	if($conn->query($qry)) {
+		create_cookie($email);
+		echo "<p>User login successsful</p>";
+		return true;
+	} else {
+		echo "<p>Bad user info</p>";
+		return false;
+	}
+
+	$conn->close();
+}
+
+function create_cookie($email) {
+	$cookie_name = 'user';
+	$cookie_value = $email;
+	setcookie($cookie_name, $cookie_value, 0, "/");
+	create_shopping_cart();
+	Header('Location: '.$_SERVER['PHP_SELF']);
+}
+
+function unset_cookie() {
+	$cookie_name = 'user';
+	unset ($_COOKIE[$cookie_name]);
+	setcookie($cookie_name, null, -1, "/");
+
+	$cookie_name = 'cart_id';
+	unset ($_COOKIE[$cookie_name]);
+	setcookie($cookie_name, null, -1, "/");
+	Header('Location: '.$_SERVER['PHP_SELF']);
+}
+
+function create_shopping_cart() {
+	error_reporting(E_ALL);
+	ini_set('display_errors',1);
+
+	$servername = 'localhost';
+	$username = 'kbsmith01_user1';
+	$password = 'Mynewpassword2';
+	$dbname = 'kbsmith01_cs';
+
+	// Create connection
+	$conn = new mysqli($servername, $username, $password, $dbname);
+	// Check connection
+	if ($conn->connect_error) {
+		die("Connection failed: " . $conn->connect_error);
+	}
+
+	$qry = "SELECT cs_cart_id FROM cs_carts ORDER BY cs_cart_id DESC LIMIT 1";
+
+	$result = $conn->query($qry);
+	$index = $result->fetch_assoc();
+
+	if($result === FALSE) {
+		$new_cart_id = 1;
+	} else {
+		$new_cart_id = $index['cs_cart_id'] + 1;
+	}
+
+	$cookie_id='cart_id';
+	setcookie($cookie_id,$new_cart_id,0,"/");
+
+	$cookie_id='user';
+	$qry = "SELECT cs_customer_id FROM cs_customers WHERE email='$_COOKIE[$cookie_id]'";
+	$result = $conn->query($qry);
+	$customer_id = $result->fetch_assoc();
+
+	$qry = "INSERT INTO `cs_carts`(`cs_case_id`, `cs_cart_id`, `cs_customer_id`, `cs_clothing_id`, `cs_clothing_size_id`, `cs_clothing_color_id`, `cs_clothing_price_id`, `quantity`, `date_added`, `date_modified`)
+					VALUES ('', '$new_cart_id', '$customer_id', '', '', '', '', '', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);";
+	if(!$conn->query($qry)) {
+		echo "<p>Cart not created</p>";
+	} else {
+		echo "<p>Cart created successfully</p>";
+	}
 }
 ?>

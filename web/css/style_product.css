@@ -1,5 +1,12 @@
-img {
+/* img {
   grid-area: image;
+} */
+
+input[type=number] {
+  width: 50px;
+  height: 20px;
+  border: 1px solid #000;
+  text-align: center;
 }
 
 .color_swatch {
@@ -15,9 +22,31 @@ img {
   padding: 5px 10px;
 }
 
-#cart_info {
-  grid-area: cart;
+#button_add_to_cart {
+  width: 100px;
+  height: 22px;
+  border: 1px solid #000;
+  background-color: #fff;
+  color: #000;
 }
+
+#button_add_to_cart:active {
+  background-color: #000;
+  color: #fff;
+}
+
+#cart {
+  grid-area: cart;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+}
+
+/* #cart_info {
+  grid-area: cart;
+} */
 
 #color_select {
   padding: 0px 15px;
@@ -26,11 +55,11 @@ img {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  width: 220px;
 }
 
 #description {
   grid-area: description;
+  padding: 15px 10px;
 }
 
 #flex_container {
@@ -38,18 +67,40 @@ img {
   justify-content: center;
 }
 
+#img_container {
+  grid-area: image;
+}
+
+#img_container > img {
+  padding: 15px;
+  margin: auto;
+  width: 90%;
+}
+
 #main_product_container {
   display: grid;
   width: 100%;
 }
 
-#price_info {
-  grid-area: price;
+#price_cost, #sale_cost {
+  padding: 0px 10px;
 }
 
-#qty_info {
-  grid-area: qty;
+#price_info {
+  grid-area: price;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
 }
+
+#quantity {
+  text-align: center;
+}
+
+/* #qty_info {
+  grid-area: qty;
+} */
 
 #sale_info {
   grid-area: sale;
@@ -60,13 +111,17 @@ img {
 }
 
 @media screen and (max-width: 650px) {
-  img {
-    width: 380px;
+  #cart {
+    justify-content: center;
+  }
+
+  #cart_info, #qty_info {
+    padding: 0px 10px;
   }
 
   #main_product_container {
     grid-template-columns: repeat(1, 380px);
-    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
     grid-template-areas:
                           "image"
                           "image"
@@ -74,21 +129,25 @@ img {
                           "description"
                           "description"
                           "color"
+                          "color"
                           "size"
-                          "qty"
                           "price"
-                          "sale"
                           "cart";
   }
 }
 
 @media screen and (min-width: 650px) {
-  img {
-    width: 380px;
+  #cart {
+    justify-content: center;
   }
+
+  #cart_info, #qty_info {
+    padding: 0px 10px;
+  }
+
   #main_product_container {
     grid-template-columns: repeat(2, 190px);
-    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
     grid-template-areas:
                         "image image"
                         "image image"
@@ -96,28 +155,31 @@ img {
                         "description description"
                         "description description"
                         "color color"
+                        "color color"
                         "size size"
-                        "qty qty"
                         "price price"
-                        "sale sale"
                         "cart cart";
   }
 }
 
 @media screen and (min-width: 900px) {
-  img {
-    width: 400px;
+  #cart {
+    justify-content: space-around;
+  }
+
+  #cart_info, #qty_info {
+    padding: 0px;
   }
   #main_product_container {
     grid-template-columns: repeat(3, 200px);
-    grid-template-rows: auto auto auto auto auto auto auto auto;
+    grid-template-rows: repeat(12, max-content);
     grid-template-areas:
+                          "image image color"
                           "image image color"
                           "image image size"
                           "image image price"
-                          "image image sale"
-                          "image image qty"
                           "image image cart"
+                          "image image ."
                           "image image ."
                           "image image ."
                           "image image ."

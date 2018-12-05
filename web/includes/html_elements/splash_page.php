@@ -1,4 +1,3 @@
-<link rel='stylesheet' href='./css/style_splash.css' type='text/css' />
 <section id='splash_page' class='splash_page'>
   <section id='main_splash_container'>
     <?php

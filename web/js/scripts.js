@@ -6,50 +6,57 @@
 $(document).ready(function() {
   // Go to create user account page
   $('.create_account_url').click(function() {
-    console.log('worked');
-    $('#main_form').load('./includes/form_user_info.php');
+    $('#main_form').load('./includes/forms/form_user_info.php');
   });
-});
 
-$(document).ready(function() {
   $('#menu_coats').click(function() {
-    $('#main_form').load('./includes/coats.php');
+    $('#main_form').load('./includes/clothes/coats.php');
   });
-});
 
-$(document).ready(function() {
   $('#menu_shirts').click(function() {
-    $('#main_form').load('./includes/shirts.php');
+    $('#main_form').load('./includes/clothes/shirts.php');
   });
-});
 
-$(document).ready(function() {
   $('#menu_pants').click(function() {
-    $('#main_form').load('./includes/pants.php');
+    $('#main_form').load('./includes/clothes/pants.php');
   });
-});
 
-$(document).ready(function() {
   $('#menu_accessories').click(function() {
-    $('#main_form').load('./includes/accessories.php');
+    $('#main_form').load('./includes/clothes/accessories.php');
   });
-});
 
-$(document).ready(function() {
-  // Show/hide compact login menu
   $('#login_button_2').click(function() {
     $('#submenu').toggleClass('unhide_submenu');
   });
 });
 
-// $(document).on('click', '.coat_01', function() {
-//   $('#main_form').load('./includes/clothes/coats/coat_01.php');
+// $(document).ready(function() {
+//   $('#menu_coats').click(function() {
+//     $('#main_form').load('./includes/clothes/coats.php');
+//   });
 // });
 //
-// $(document).on('click', '.coat_02', function() {
-//   $('#main_form').load('./includes/clothes/coats/coat_02.php');
+// $(document).ready(function() {
+//   $('#menu_shirts').click(function() {
+//     $('#main_form').load('./includes/clothes/shirts.php');
+//   });
 // });
 //
-// $(document).on('click', '.coat_03', function() {
-//   $('#main_form').load('./includes/clothes/coats/coat_03.php');
+// $(document).ready(function() {
+//   $('#menu_pants').click(function() {
+//     $('#main_form').load('./includes/clothes/pants.php');
+//   });
+// });
+//
+// $(document).ready(function() {
+//   $('#menu_accessories').click(function() {
+//     $('#main_form').load('./includes/clothes/accessories.php');
+//   });
+// });
+//
+// $(document).ready(function() {
+//   // Show/hide compact login menu
+//   $('#login_button_2').click(function() {
+//     $('#submenu').toggleClass('unhide_submenu');
+//   });
 // });

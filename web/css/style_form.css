@@ -3,15 +3,20 @@ form {
   width: 380px;
 }
 
+.error_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.error_header, .error_message {
+  display: block;
+}
+
 .form_title_legend {
   padding-left: 5px;
   padding-right: 5px;
   margin-left: 15px;
   font-size: 1.5em;
-}
-
-.input_label {
-
 }
 
 .main_form {

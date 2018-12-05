@@ -1,4 +1,3 @@
-<link rel='stylesheet' href='./css/style_form.css' type='text/css' />
 <section id='user_info_entry_form' class='user_info_entry_form'>
   <div id='background_fill'>
     <div id='form_wrapper'>
@@ -11,9 +10,11 @@
             <legend class='form_title_legend'>User Information</legend>
             <span id='form_span'>
               <?php
+                include_once('../functions.php');
+
                 create_form_field('Full name:', 'text', 'full_name', 'full_name', ['maxlength'=>'40', 'size'=>'20', 'title'=>'Please enter your name here', 'placeholder'=>'Please enter your name here', 'pattern'=>'.{2,20}']);
                 create_form_field('Email:', 'email', 'email_field', 'email_field', ['maxlength'=>'40', 'size'=>'20', 'title'=>'Please enter your email here', 'placeholder'=>'email@domain.com']);
-                create_form_field('Password:', 'password', 'password_field', 'password_field', ['maxlength'=>'40', 'size'=>'20', 'title'=>'Please enter your password here', 'placeholder'=>'Please enter your password here', 'pattern'=>'[A-Za-z]{2,20}']);
+                create_form_field('Password:', 'text', 'password_field', 'password_field', ['maxlength'=>'40', 'size'=>'20', 'title'=>'Please enter your password here', 'placeholder'=>'Please enter your password here', 'pattern'=>'[A-Za-z]{2,20}']);
                 create_form_field('Phone number:', 'text', 'number_field', 'number_field', ['maxlength'=>'40', 'size'=>'20', 'title'=>'Please enter your phone number here', 'placeholder'=>'123-456-7890']);
               ?>
             </span>
@@ -24,9 +25,9 @@
             </p>
           </fieldset>
 
-
-          <input type='hidden' name='submitted' id='submitted' value='submitted' />
+          <input type='hidden' name='customer_submitted' id='customer_submitted' value='customer_submitted' />
         </form>
+
       </section>
     </div>
   </div>

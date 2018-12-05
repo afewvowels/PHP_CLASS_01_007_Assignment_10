@@ -1,0 +1,208 @@
+[02-Dec-2018 14:12:54 UTC] PHP Warning:  include_once(./functions.php): failed to open stream: No such file or directory in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/shirts.php on line 6
+[02-Dec-2018 14:12:54 UTC] PHP Warning:  include_once(): Failed opening './functions.php' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/shirts.php on line 6
+[02-Dec-2018 14:12:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_product_preview() in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/shirts.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/shirts.php on line 15
+[02-Dec-2018 14:12:56 UTC] PHP Warning:  include_once(./functions.php): failed to open stream: No such file or directory in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/pants.php on line 6
+[02-Dec-2018 14:12:56 UTC] PHP Warning:  include_once(): Failed opening './functions.php' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/pants.php on line 6
+[02-Dec-2018 14:12:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_product_preview() in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/pants.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/pants.php on line 15
+[02-Dec-2018 14:12:57 UTC] PHP Warning:  include_once(./functions.php): failed to open stream: No such file or directory in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/accessories.php on line 6
+[02-Dec-2018 14:12:57 UTC] PHP Warning:  include_once(): Failed opening './functions.php' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/accessories.php on line 6
+[02-Dec-2018 14:12:57 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_product_preview() in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/accessories.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/accessories.php on line 15
+[02-Dec-2018 14:12:57 UTC] PHP Warning:  include_once(./functions.php): failed to open stream: No such file or directory in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/accessories.php on line 6
+[02-Dec-2018 14:12:57 UTC] PHP Warning:  include_once(): Failed opening './functions.php' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/accessories.php on line 6
+[02-Dec-2018 14:12:57 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_product_preview() in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/accessories.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/accessories.php on line 15
+[02-Dec-2018 14:12:58 UTC] PHP Warning:  include_once(./functions.php): failed to open stream: No such file or directory in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/coats.php on line 6
+[02-Dec-2018 14:12:58 UTC] PHP Warning:  include_once(): Failed opening './functions.php' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/coats.php on line 6
+[02-Dec-2018 14:12:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_product_preview() in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/coats.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/coats.php on line 15
+[02-Dec-2018 14:13:01 UTC] PHP Warning:  include_once(./functions.php): failed to open stream: No such file or directory in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/coats.php on line 6
+[02-Dec-2018 14:13:01 UTC] PHP Warning:  include_once(): Failed opening './functions.php' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/coats.php on line 6
+[02-Dec-2018 14:13:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_product_preview() in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/coats.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/coats.php on line 15
+[02-Dec-2018 14:15:00 UTC] PHP Warning:  include_once(./functions.php): failed to open stream: No such file or directory in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/coats.php on line 6
+[02-Dec-2018 14:15:00 UTC] PHP Warning:  include_once(): Failed opening './functions.php' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/coats.php on line 6
+[02-Dec-2018 14:15:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_product_preview() in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/coats.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/coats.php on line 15
+[02-Dec-2018 14:15:01 UTC] PHP Warning:  include_once(./functions.php): failed to open stream: No such file or directory in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/pants.php on line 6
+[02-Dec-2018 14:15:01 UTC] PHP Warning:  include_once(): Failed opening './functions.php' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/pants.php on line 6
+[02-Dec-2018 14:15:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_product_preview() in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/pants.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/pants.php on line 15
+[02-Dec-2018 14:15:02 UTC] PHP Warning:  include_once(./functions.php): failed to open stream: No such file or directory in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/accessories.php on line 6
+[02-Dec-2018 14:15:02 UTC] PHP Warning:  include_once(): Failed opening './functions.php' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/accessories.php on line 6
+[02-Dec-2018 14:15:02 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_product_preview() in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/accessories.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/accessories.php on line 15
+[02-Dec-2018 14:16:05 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_product_preview() in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/coats.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/coats.php on line 13
+[02-Dec-2018 14:16:06 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_product_preview() in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/shirts.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/shirts.php on line 13
+[02-Dec-2018 14:16:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_product_preview() in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/accessories.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/accessories.php on line 13
+[02-Dec-2018 14:16:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_product_preview() in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/pants.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/pants.php on line 13
+[02-Dec-2018 14:17:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_product_preview() in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/shirts.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/shirts.php on line 13
+[02-Dec-2018 14:17:04 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_product_preview() in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/shirts.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/shirts.php on line 13
+[02-Dec-2018 14:17:05 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_product_preview() in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/coats.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/coats.php on line 13
+[02-Dec-2018 14:17:06 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_product_preview() in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/shirts.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/shirts.php on line 13
+[02-Dec-2018 14:17:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_product_preview() in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/pants.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/pants.php on line 13
+[02-Dec-2018 14:19:12 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_product_preview() in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/coats.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/coats.php on line 13
+[02-Dec-2018 14:19:14 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_product_preview() in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/shirts.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/shirts.php on line 13
+[02-Dec-2018 14:19:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_product_preview() in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/coats.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/coats.php on line 13
+[02-Dec-2018 14:20:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_product_preview() in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/shirts.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/shirts.php on line 12
+[02-Dec-2018 14:21:57 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_product_preview() in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/coats.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/coats.php on line 13
+[02-Dec-2018 14:22:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_product_preview() in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/shirts.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/shirts.php on line 12
+[02-Dec-2018 14:23:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_product_preview() in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/coats.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/coats.php on line 13
+[02-Dec-2018 14:23:46 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_product_preview() in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/coats.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/coats.php on line 13
+[02-Dec-2018 14:23:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_product_preview() in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/coats.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/coats.php on line 12
+[02-Dec-2018 14:24:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_product_preview() in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/coats.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/coats.php on line 12
+[02-Dec-2018 14:25:09 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_product_preview() in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/coats.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/coats.php on line 12
+[02-Dec-2018 14:25:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_product_preview() in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/coats.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/coats.php on line 12
+[02-Dec-2018 14:25:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_product_preview() in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/coats.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/coats.php on line 13
+[02-Dec-2018 14:28:17 UTC] PHP Warning:  include_once(./includes/functions.php): failed to open stream: No such file or directory in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/shirts.php on line 5
+[02-Dec-2018 14:28:17 UTC] PHP Warning:  include_once(): Failed opening './includes/functions.php' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/shirts.php on line 5
+[02-Dec-2018 14:28:17 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_product_preview() in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/shirts.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/shirts.php on line 14
+[02-Dec-2018 14:28:19 UTC] PHP Warning:  include_once(./includes/functions.php): failed to open stream: No such file or directory in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/shirts.php on line 5
+[02-Dec-2018 14:28:19 UTC] PHP Warning:  include_once(): Failed opening './includes/functions.php' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/shirts.php on line 5
+[02-Dec-2018 14:28:19 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_product_preview() in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/shirts.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/shirts.php on line 14
+[02-Dec-2018 14:28:20 UTC] PHP Warning:  include_once(./includes/functions.php): failed to open stream: No such file or directory in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/pants.php on line 5
+[02-Dec-2018 14:28:20 UTC] PHP Warning:  include_once(): Failed opening './includes/functions.php' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/pants.php on line 5
+[02-Dec-2018 14:28:20 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_product_preview() in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/pants.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/pants.php on line 14
+[02-Dec-2018 14:28:22 UTC] PHP Warning:  include_once(./includes/functions.php): failed to open stream: No such file or directory in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/accessories.php on line 5
+[02-Dec-2018 14:28:22 UTC] PHP Warning:  include_once(): Failed opening './includes/functions.php' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/accessories.php on line 5
+[02-Dec-2018 14:28:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_product_preview() in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/accessories.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/accessories.php on line 14
+[02-Dec-2018 14:28:41 UTC] PHP Warning:  include_once(../includes/functions.php): failed to open stream: No such file or directory in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/shirts.php on line 5
+[02-Dec-2018 14:28:41 UTC] PHP Warning:  include_once(): Failed opening '../includes/functions.php' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/shirts.php on line 5
+[02-Dec-2018 14:28:41 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_product_preview() in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/shirts.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/shirts.php on line 14
+[02-Dec-2018 14:28:42 UTC] PHP Warning:  include_once(../includes/functions.php): failed to open stream: No such file or directory in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/pants.php on line 5
+[02-Dec-2018 14:28:42 UTC] PHP Warning:  include_once(): Failed opening '../includes/functions.php' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/pants.php on line 5
+[02-Dec-2018 14:28:42 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_product_preview() in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/pants.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/pants.php on line 14
+[02-Dec-2018 14:28:43 UTC] PHP Warning:  include_once(../includes/functions.php): failed to open stream: No such file or directory in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/accessories.php on line 5
+[02-Dec-2018 14:28:43 UTC] PHP Warning:  include_once(): Failed opening '../includes/functions.php' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/accessories.php on line 5
+[02-Dec-2018 14:28:43 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_product_preview() in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/accessories.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/accessories.php on line 14
+[02-Dec-2018 14:28:47 UTC] PHP Warning:  include_once(../includes/functions.php): failed to open stream: No such file or directory in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/shirts.php on line 5
+[02-Dec-2018 14:28:47 UTC] PHP Warning:  include_once(): Failed opening '../includes/functions.php' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/shirts.php on line 5
+[02-Dec-2018 14:28:47 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_product_preview() in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/shirts.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/shirts.php on line 14
+[02-Dec-2018 14:28:48 UTC] PHP Warning:  include_once(../includes/functions.php): failed to open stream: No such file or directory in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/pants.php on line 5
+[02-Dec-2018 14:28:48 UTC] PHP Warning:  include_once(): Failed opening '../includes/functions.php' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/pants.php on line 5
+[02-Dec-2018 14:28:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_product_preview() in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/pants.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/pants.php on line 14
+[02-Dec-2018 14:28:48 UTC] PHP Warning:  include_once(../includes/functions.php): failed to open stream: No such file or directory in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/shirts.php on line 5
+[02-Dec-2018 14:28:48 UTC] PHP Warning:  include_once(): Failed opening '../includes/functions.php' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/shirts.php on line 5
+[02-Dec-2018 14:28:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_product_preview() in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/shirts.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/shirts.php on line 14
+[02-Dec-2018 14:28:53 UTC] PHP Warning:  include_once(../includes/functions.php): failed to open stream: No such file or directory in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/shirts.php on line 5
+[02-Dec-2018 14:28:53 UTC] PHP Warning:  include_once(): Failed opening '../includes/functions.php' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/shirts.php on line 5
+[02-Dec-2018 14:28:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_product_preview() in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/shirts.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/82/kbsmith01/public_html/e_commerce/Assignment_9/web/includes/clothes/shirts.php on line 14
